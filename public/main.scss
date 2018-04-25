@@ -22,7 +22,7 @@ footer {
 
 #left-image {
   position: relative;
-  bottom: 1.2vw;
+  bottom: 05%;
   right: 2vw;
   width: 130%;
 }
@@ -70,8 +70,8 @@ a:hover {
   border-right: 0.12vw white solid;
   position: relative;
   top: 1.5vw;
+  left: 1vw;
   margin: 1vw;
-  margin-right: 0px;
 }
 
 #last-tag {
@@ -179,4 +179,56 @@ input {
   font-size: 1.5vw;
   position: relative;
   bottom: 0.1vw;
+}
+
+.container-two {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  height: 82%;
+}
+
+.cupcake-img {
+  margin: 1vw auto;
+  width: 25%;
+}
+
+.cake-info {
+  text-align: center;
+  color: white;
+  font-size: 1.7vw;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: $maincolor;
+  border-radius: 10px;
+  margin: 1vw;
+}
+
+#first-cake {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#second-cake {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#third-cake {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#first-text {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#second-text {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#third-text {
+  grid-column: 2;
+  grid-row: 3;
 }
