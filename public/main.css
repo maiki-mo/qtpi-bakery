@@ -193,4 +193,11 @@ input {
   grid-column: 2;
   grid-row: 3; }
 
+@media (max-width: 600px) {
+  #mid-container {
+    display: block; }
+
+  #left-image {
+    width: 50%; } }
+
 /*# sourceMappingURL=main.css.map */
