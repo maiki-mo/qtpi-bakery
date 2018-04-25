@@ -198,6 +198,9 @@ input {
     display: block; }
 
   #left-image {
-    width: 50%; } }
+    width: 50%; }
+
+  body {
+    height: 100vw; } }
 
 /*# sourceMappingURL=main.css.map */
