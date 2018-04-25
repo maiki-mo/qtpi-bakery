@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>qtPIs Bake & Cake</title>
+  <link href="https://fonts.googleapis.com/css?family=Gaegu|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="main.css"></link>
+</head>
+<body>
+  <header>
+    <section class="container">
+      <div id="h-box-1">
+      </div>
+      <div id="h-box-2">
+        <article class="flex-header">
+          <h1>qt<span id="pi">PI</span>s Cake & Bake</h1>
+        </article>
+      </div>
+      <div id="h-box-3">
+        <nav>
+          <a class="nav-link" href="/cakes">
+            <span><p>cake</p></span>
+          </a>
+          <a class="nav-link" href="/cookies">
+            <span><p>cookies</p></span>
+          </a>
+          <a id="last-tag" class="nav-link" href="/muffins">
+            <span><p>muffins</p></span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+    <%= yield %>
+    <style src="main.js"></style>
+  
+  <footer>
+    <form class="container" id="form" method="post">
+      <div id="mail-2">
+        <span>
+            <label for="email">join our e-mail list <3:</label>
+        </span>
+        <span>
+            <input id="mail" type="email" id="mail" value"E-Mail" name="email">
+        </span>
+        <span>
+          <button type="submit" value="Submit">submit onii-chan!</button>
+        </span>
+      </div>
+    </form>
+  </footer>
+</body>
+</html>

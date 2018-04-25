@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  margin: 0 10px 0 10px;
+  background-color: #FF6959;
+  border-radius: 0 0 10px 10px; }
+
+footer {
+  height: 40px;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  background-color: #FF6959;
+  border-radius: 10px 10px 0 0; }
+
+#left-image {
+  position: relative;
+  bottom: 1.2vw;
+  right: 2vw;
+  width: 130%; }
+
+h1 {
+  text-align: center;
+  margin: 2%;
+  font-weight: bold;
+  font-size: 5vw;
+  color: white;
+  font-family: 'Gaegu', cursive; }
+
+h2 {
+  text-align: center;
+  margin: 2%;
+  font-weight: bold;
+  font-size: 3vw;
+  color: white;
+  font-family: 'Gaegu', cursive; }
+
+#pi {
+  font-size: 6vw; }
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  font-family: 'Shadows Into Light', cursive; }
+
+p {
+  display: inline-block; }
+
+a:hover {
+  color: black;
+  cursor: pointer; }
+
+.nav-link {
+  border-right: 0.12vw white solid;
+  position: relative;
+  top: 1.5vw;
+  margin: 1vw;
+  margin-right: 0px; }
+
+#last-tag {
+  border-right: none; }
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%; }
+
+#h-box-1 {
+  grid-column: 1; }
+
+#h-box-2 {
+  grid-column: 2; }
+
+#h-box-3 {
+  grid-column: 3; }
+
+#m-box-1 {
+  border-radius: 10px;
+  grid-column: 1;
+  background-color: white;
+  text-align: center;
+  margin: 1vw;
+  margin-right: 0; }
+
+#m-box-2 {
+  margin: 1vw;
+  border-radius: 10px;
+  grid-column: 2;
+  background-color: #FFD4D0; }
+
+#info {
+  margin: 1vw;
+  background-color: #FF6959;
+  border-radius: 10px; }
+
+#m-box-3 {
+  border-radius: 10px;
+  grid-column: 3;
+  background-color: white;
+  text-align: center;
+  margin: 1vw;
+  margin-left: 0; }
+
+hr {
+  color: black;
+  height: 3px;
+  background-color: black;
+  margin: -5px 40px 0 40px; }
+
+.text-info {
+  border-radius: 10px;
+  margin: 20px;
+  background-color: #FFD4D0; }
+
+#mail-2 {
+  grid-column: 2;
+  text-align: center; }
+
+label {
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2vw;
+  margin-right: 1vw; }
+
+button {
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #FFD4D0;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  position: relative;
+  bottom: 0.3vw; }
+
+input {
+  margin-right: 1.5vw;
+  background-color: #FF6959;
+  width: 15vw;
+  height: 2vw;
+  border: none;
+  border-bottom: 1px solid white;
+  font-family: 'Gaegu', cursive;
+  font-size: 1.5vw;
+  position: relative;
+  bottom: 0.1vw; }
+
+/*# sourceMappingURL=main.css.map */
