@@ -53,7 +53,7 @@ a {
   position: relative;
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-family: 'Shadows Into Light', cursive;
 }
 
@@ -69,8 +69,8 @@ a:hover {
 .nav-link {
   border-right: 0.12vw white solid;
   position: relative;
-  top: 1.5vw;
-  left: 1vw;
+  top: 2.2vw;
+  right: 1.5vw;
   margin: 1vw;
 }
 
@@ -81,6 +81,16 @@ a:hover {
 .container {
   display: grid;
   grid-template-columns: 25% 50% 25%;
+}
+
+#mid-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.low-container {
+  display: grid;
+  grid-template-columns: 75% 25%
 }
 
 #h-box-1 {
@@ -102,13 +112,14 @@ a:hover {
   background-color: white;
   text-align: center;
   margin: 1vw;
-  margin-right: 0;
+  margin-right: 5vw;
 }
 
 #m-box-2 {
   margin: 1vw;
+  margin-right: 5vw;
   border-radius: 10px;
-  grid-column: 2;
+  grid-column: 2/3;
   background-color: #FFD4D0;
 }
 
@@ -118,15 +129,15 @@ a:hover {
   border-radius: 10px;
 }
 
-#m-box-3 {
-  // border: 5px black solid;
-  border-radius: 10px;
-  grid-column: 3;
-  background-color: white;
-  text-align: center;
-  margin: 1vw;
-  margin-left: 0;
-}
+// #m-box-3 {
+//   // border: 5px black solid;
+//   border-radius: 10px;
+//   grid-column: 3;
+//   background-color: white;
+//   text-align: center;
+//   margin: 1vw;
+//   margin-left: 0;
+// }
 
 hr {
   color: black;
@@ -141,9 +152,17 @@ hr {
   background-color: #FFD4D0
 }
 
+#mail-1 {
+  grid-column: 1;
+  text-align: center;
+}
+
 #mail-2 {
   grid-column: 2;
-  text-align: center;
+  border-left: 1px white solid;
+  height: 3.7vw;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2vw;
 }
 
 label {
@@ -191,6 +210,8 @@ input {
 .cupcake-img {
   margin: 1vw auto;
   width: 25%;
+  border: 2px white solid;
+  border-radius: 50%;
 }
 
 .cake-info {
@@ -233,6 +254,13 @@ input {
   grid-row: 3;
 }
 
+.alt-route-content {
+  margin: 1vw 5vw;
+  height: 40vw;
+  background-color: #FFD4D0;
+  border-radius: 10px;
+}
+
 @media (max-width: 600px) {
   #mid-container {
     display: block;
@@ -240,5 +268,9 @@ input {
 
   #left-image {
     width: 50%;
+  }
+
+  input {
+    width: 10vw;
   }
 }
