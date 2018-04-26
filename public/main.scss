@@ -1,5 +1,4 @@
 $maincolor: #FF6959;
-$font: 'Abril Fatface', cursive;
 $randomNumber: random(200);
 
 body {
@@ -97,6 +96,7 @@ a:hover {
 }
 
 #mid-container {
+  margin: 3vw 0;
   display: grid;
   grid-template-columns: 35% 65%;
 }
@@ -290,7 +290,7 @@ input {
 
 .alt-route-content {
   text-align: center;
-  margin: 1vw 10vw;
+  margin: 4vw 10vw;
   background-color: #FFD4D0;
   border-radius: 10px;
   display: grid;
@@ -354,6 +354,19 @@ input {
 .fbox-6 {
   margin-top: 16%;
   grid-column: 2;
+}
+
+ul {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.7vw;
+  margin-top: 2vw;
+  margin-right: 3vw;
+  color: white;
+}
+
+ul>li {
+  list-style: none;
+  font-size: 1.5vw;
 }
 
 @media (max-width: 600px) {

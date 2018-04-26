@@ -1,10 +1,25 @@
 <section class="alt-route-content">
     <img class="food-img fbox-1" src="images/cake/rainbow-cat.jpg">
-  <article class="food-info fbox-2"></article>
+  <article class="food-info fbox-2">
+    <ul><%= @catcake.name %>
+      <li>Price: <%= @catcake.price %>
+      <li><br /><%= @catcake.description %>
+    </ul>
+  </article>
    <img class="food-img fbox-3" src="images/cake/fuzzy-bear.jpg">
-  <article class="food-info fbox-4"></article>
+  <article class="food-info fbox-4">
+    <ul><%= @bearcake.name %>
+      <li>Price: <%= @bearcake.price %>
+      <li><br /><br /><%= @bearcake.description %>
+    </ul>
+  </article>
    <img class="food-img fbox-5" src="images/cake/cool-fox.jpg">
-  <article class="food-info fbox-6"></article>
+  <article class="food-info fbox-6">
+    <ul><%= @foxcake.name %>
+      <li>Price: <%= @foxcake.price %>
+      <li><br /><br /><%= @foxcake.description %>
+    </ul>
+  </article>
 </section>
 
 <%#IMG credit: http://cococakeland.com/cakes/rainbow-caticorn-cake/
