@@ -31,7 +31,7 @@ h2 {
   text-align: center;
   margin: 2%;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 4vw;
   color: white;
   font-family: 'Gaegu', cursive; }
 
@@ -78,7 +78,7 @@ a:hover {
   grid-template-columns: 20% 50% 30%; }
 
 #mid-container {
-  margin: 3vw 0;
+  margin: 3vw 0 1vw 0;
   display: grid;
   grid-template-columns: 35% 65%; }
 
@@ -199,6 +199,9 @@ input {
   animation-name: hi;
   animation-duration: 1.75s;
   animation-fill-mode: forwards; }
+
+.cupcake-img:hover + .hidden {
+  opacity: 100; }
 
 .cupcake-img-spin {
   margin: 1vw auto;
@@ -326,17 +329,37 @@ ul > li {
 #scramble {
   border: 2px white solid;
   border-radius: 10px;
-  margin-top: 1.4vw;
+  margin-top: 2vw;
   font-size: 1.5vw;
   font-family: 'Gaegu', cursive;
   position: relative; }
 
-@media (max-width: 600px) {
-  #scramble {
-    display: none; }
+.hidden {
+  font-family: 'Gaegu', cursive;
+  font-size: 2vw;
+  color: white;
+  padding: 0.5vw;
+  border-radius: 10px;
+  background-color: #FF6959; }
 
+#hi-1 {
+  position: relative;
+  bottom: 51vw;
+  left: 40vw; }
+
+#hi-2 {
+  position: relative;
+  bottom: 34vw;
+  left: 79.5vw; }
+
+#hi-3 {
+  position: relative;
+  bottom: 16vw;
+  left: 24.5vw; }
+
+@media (max-width: 600px) {
   h2 {
-    font-size: 8vw;
+    font-size: 7vw;
     position: relative;
     left: 13vw; }
 
@@ -383,8 +406,8 @@ ul > li {
     transform: rotate(0deg); }
   20% {
     position: relative;
-    top: 32px;
-    right: 26px;
+    top: 85px;
+    right: 167px;
     transform: rotate(590deg); }
   45% {
     position: relative;
@@ -394,7 +417,7 @@ ul > li {
   70% {
     position: relative;
     top: -10%;
-    right: 118px;
+    right: 114px;
     transform: rotate(800deg); }
   100% {
     position: relative;

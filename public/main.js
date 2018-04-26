@@ -1,7 +1,7 @@
 let scramble = document.querySelector("#scramble");
 let cupcakes = document.querySelectorAll(".cupcake-img");
 
-scramble.addEventListener("onload", wildOut);
+scramble.addEventListener("click", wildOut);
 
 function wildOut() {
   let cupcakes = document.querySelectorAll(".cupcake-img");
