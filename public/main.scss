@@ -153,10 +153,11 @@ a:hover {
 // }
 
 hr {
-  color: black;
-  height: 3px;
-  background-color: black;
-  margin: -5px 40px 0 40px;
+  height: 1vw;
+  background-color: $maincolor;
+  border: 2px #FFD4D0 solid;
+  border-radius: 10px;
+  margin: 0 10vw 0 10vw;
 }
 
 .text-info {
@@ -374,8 +375,28 @@ ul>li {
     display: block;
   }
 
+  #m-box-2 {
+    position: relative;
+    left: 2vw;
+  }
+
+  .cupcake-img {
+    margin-top: 28%;
+    width: 70%;
+  }
+
   #left-image {
     width: 50%;
+    margin-top: -4vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  #info {
+    position: relative;
+    top: 1vw;
   }
 
   input {
