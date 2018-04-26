@@ -25,8 +25,8 @@ post '/cookies' do
   redirect '/cookies'
 end
 
-get '/muffins' do
-  erb :muffins
+get '/cupcakes' do
+  erb :cupcakes
 end
 
 post '/muffins' do
