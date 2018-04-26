@@ -1,12 +1,15 @@
 let scramble = document.querySelector("#scramble");
 let cupcakes = document.querySelectorAll(".cupcake-img");
 
+
 scramble.addEventListener("click", wildOut);
 
 function wildOut() {
   let cupcakes = document.querySelectorAll(".cupcake-img");
+  let hidden = document.querySelectorAll(".hidden");
+  console.log(hidden);
   for (var i in cupcakes) {
-    if (cupcakes.hasOwnProperty(i)) {
+    if (cupcakes[i].className === 'cupcake-img') {
       cupcakes[i].className = 'cupcake-img-spin';
      } else {
       cupcakes[i].className = 'cupcake-img';

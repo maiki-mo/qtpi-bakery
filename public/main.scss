@@ -238,8 +238,11 @@ input {
   animation-fill-mode: forwards;
 }
 
-.cupcake-img:hover + .hidden {
+.hello:hover .hidden {
   opacity: 100;
+  animation-name: herro;
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards;
 }
 
 .cupcake-img-spin {
@@ -279,16 +282,25 @@ input {
 #first-cake {
   grid-column: 1;
   grid-row: 1;
+  position: relative;
+  left: 4vw;
+  bottom: 0.7vw;
 }
 
 #second-cake {
   grid-column: 2;
   grid-row: 2;
+  position: relative;
+  left: 0.7vw;
+  bottom: 1vw;
 }
 
 #third-cake {
   grid-column: 1;
   grid-row: 3;
+  position: relative;
+  left: 2vw;
+  bottom: 0.8vw;
 }
 
 #first-text {
@@ -397,6 +409,8 @@ ul>li {
 }
 
 .hidden {
+  width: 100%;
+  opacity: 0;
   font-family: 'Gaegu', cursive;
   font-size: 2vw;
   color: white;
@@ -407,25 +421,29 @@ ul>li {
 
 #hi-1 {
   position: relative;
-  bottom: 51vw;
-  left: 40vw;
+  bottom: 12vw;
+  left: 4vw;
 }
 
 #hi-2 {
   position: relative;
-  bottom: 34vw;
-  left: 79.5vw;
+  bottom: 12vw;
+  left: 2vw;
 }
 
 #hi-3 {
   position: relative;
-  bottom: 16vw;
-  left: 24.5vw;
+  bottom: 12vw;
+  left: 20vw;
 }
 
 @media (max-width: 600px) {
   #scramble {
     // display: none;
+  }
+
+  .hidden {
+    display: none;
   }
 
   h2 {
@@ -475,10 +493,18 @@ ul>li {
   100% {transform: rotate(0deg)}
 }
 
+@keyframes herro {
+  0% {opacity: 0;}
+  25% {opacity: 0.5;}
+  50% {opacity: .8;}
+  75% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
 @keyframes wah {
-  0% {position: relative; top: 0%; right: 0; transform: rotate(0deg);}
-  20% {position: relative; top: random(200)+px; right: random(500)+px; transform: rotate(590deg);}
-  45% {position: relative; top: 36%; right: -20%; transform: rotate(1120deg);}
-  70% {position: relative; top: -10%; right: random(200)+px; transform: rotate(800deg);}
-  100% {position: relative; top: 0%; right: 0; transform: rotate(0deg);}
+  0% {position: relative; top: 0%; left: 0%; transform: rotate(0deg);}
+  20% {position: relative; top: 30%; left: 20vw; transform: rotate(590deg);}
+  45% {position: relative; top: -126%; left: -30vw; transform: rotate(1120deg);}
+  70% {position: relative; top: -30%; left: 10vw;transform: rotate(800deg);}
+  100% {position: relative; top: 0%; transform: rotate(0deg);}
 }
