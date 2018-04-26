@@ -393,6 +393,16 @@ ul>li {
 }
 
 @media (max-width: 600px) {
+  #scramble {
+    display: none;
+  }
+
+  h2 {
+    font-size: 8vw;
+    position: relative;
+    left: 13vw;
+  }
+
   #mid-container {
     display: block;
   }

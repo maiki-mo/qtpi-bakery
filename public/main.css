@@ -332,6 +332,14 @@ ul > li {
   position: relative; }
 
 @media (max-width: 600px) {
+  #scramble {
+    display: none; }
+
+  h2 {
+    font-size: 8vw;
+    position: relative;
+    left: 13vw; }
+
   #mid-container {
     display: block; }
 
@@ -375,8 +383,8 @@ ul > li {
     transform: rotate(0deg); }
   20% {
     position: relative;
-    top: 55px;
-    right: 439px;
+    top: 32px;
+    right: 26px;
     transform: rotate(590deg); }
   45% {
     position: relative;
@@ -386,7 +394,7 @@ ul > li {
   70% {
     position: relative;
     top: -10%;
-    right: 55px;
+    right: 118px;
     transform: rotate(800deg); }
   100% {
     position: relative;
