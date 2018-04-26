@@ -142,16 +142,6 @@ a:hover {
   border-radius: 10px;
 }
 
-// #m-box-3 {
-//   // border: 5px black solid;
-//   border-radius: 10px;
-//   grid-column: 3;
-//   background-color: white;
-//   text-align: center;
-//   margin: 1vw;
-//   margin-left: 0;
-// }
-
 hr {
   height: 1vw;
   background-color: $maincolor;
@@ -237,15 +227,38 @@ input {
   border-radius: 50%;
 }
 
+.cupcake-img:hover {
+  margin: 1vw auto;
+  margin-top: 14%;
+  width: 35%;
+  border: 4px white solid;
+  border-radius: 50%;
+  animation-name: hi;
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards;
+}
+
 .cupcake-img-spin {
   margin: 1vw auto;
+  margin-top: 14%;
   width: 35%;
-  border: 2px white solid;
+  border: 4px white solid;
   border-radius: 50%;
   animation-name: wah;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
+}
+
+.cupcake-img-spin:hover {
+  margin: 1vw auto;
+  margin-top: 14%;
+  width: 35%;
+  border: 4px white solid;
+  border-radius: 50%;
+  animation-name: hi;
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards;
 }
 
 .cake-info {
@@ -370,6 +383,15 @@ ul>li {
   font-size: 1.5vw;
 }
 
+#scramble {
+  border: 2px white solid;
+  border-radius: 10px;
+  margin-top: 1.4vw;
+  font-size: 1.5vw;
+  font-family: 'Gaegu', cursive;
+  position: relative;
+}
+
 @media (max-width: 600px) {
   #mid-container {
     display: block;
@@ -404,10 +426,18 @@ ul>li {
   }
 }
 
+@keyframes hi {
+  0% {transform: rotate(0deg)}
+  25% {transform: rotate(30deg)}
+  50% {transform: rotate(-30deg)}
+  75% {transform: rotate(30deg)}
+  100% {transform: rotate(0deg)}
+}
+
 @keyframes wah {
-  0% {position: relative; top: 0; right: 0; transform: rotate(0deg);}
-  20% {position: relative; top: 10%; right: 100%; transform: rotate(590deg);}
+  0% {position: relative; top: 0%; right: 0; transform: rotate(0deg);}
+  20% {position: relative; top: random(200)+px; right: random(500)+px; transform: rotate(590deg);}
   45% {position: relative; top: 36%; right: -20%; transform: rotate(1120deg);}
-  70% {position: relative; top: -10%; right: 80%; transform: rotate(800deg);}
+  70% {position: relative; top: -10%; right: random(200)+px; transform: rotate(800deg);}
   100% {position: relative; top: 0%; right: 0; transform: rotate(0deg);}
 }

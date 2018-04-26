@@ -190,15 +190,36 @@ input {
   border: 4px white solid;
   border-radius: 50%; }
 
+.cupcake-img:hover {
+  margin: 1vw auto;
+  margin-top: 14%;
+  width: 35%;
+  border: 4px white solid;
+  border-radius: 50%;
+  animation-name: hi;
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards; }
+
 .cupcake-img-spin {
   margin: 1vw auto;
+  margin-top: 14%;
   width: 35%;
-  border: 2px white solid;
+  border: 4px white solid;
   border-radius: 50%;
   animation-name: wah;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear; }
+
+.cupcake-img-spin:hover {
+  margin: 1vw auto;
+  margin-top: 14%;
+  width: 35%;
+  border: 4px white solid;
+  border-radius: 50%;
+  animation-name: hi;
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards; }
 
 .cake-info {
   text-align: justify;
@@ -302,6 +323,14 @@ ul > li {
   list-style: none;
   font-size: 1.5vw; }
 
+#scramble {
+  border: 2px white solid;
+  border-radius: 10px;
+  margin-top: 1.4vw;
+  font-size: 1.5vw;
+  font-family: 'Gaegu', cursive;
+  position: relative; }
+
 @media (max-width: 600px) {
   #mid-container {
     display: block; }
@@ -327,16 +356,27 @@ ul > li {
 
   input {
     width: 10vw; } }
+@keyframes hi {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(30deg); }
+  50% {
+    transform: rotate(-30deg); }
+  75% {
+    transform: rotate(30deg); }
+  100% {
+    transform: rotate(0deg); } }
 @keyframes wah {
   0% {
     position: relative;
-    top: 0;
+    top: 0%;
     right: 0;
     transform: rotate(0deg); }
   20% {
     position: relative;
-    top: 10%;
-    right: 100%;
+    top: 55px;
+    right: 439px;
     transform: rotate(590deg); }
   45% {
     position: relative;
@@ -346,7 +386,7 @@ ul > li {
   70% {
     position: relative;
     top: -10%;
-    right: 80%;
+    right: 55px;
     transform: rotate(800deg); }
   100% {
     position: relative;
