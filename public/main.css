@@ -233,10 +233,13 @@ input {
   grid-row: 3; }
 
 .alt-route-content {
-  margin: 1vw 5vw;
-  height: 40vw;
+  text-align: center;
+  margin: 1vw 10vw;
   background-color: #FFD4D0;
-  border-radius: 10px; }
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%; }
 
 .icon {
   width: 2vw;
@@ -244,6 +247,47 @@ input {
 
 #first-icon {
   margin-left: 2vw; }
+
+.food-info {
+  border-radius: 10px;
+  width: 20vw;
+  height: 20vw;
+  background-color: #FF6959;
+  margin: 2vw;
+  margin-right: 10vw; }
+
+.food-img {
+  border: 4px white solid;
+  border-radius: 10px;
+  width: 30vw;
+  background-color: white;
+  height: 30vw;
+  margin: 2vw;
+  margin-left: 10vw; }
+
+.fbox-1 {
+  text-align: center;
+  grid-column: 1; }
+
+.fbox-2 {
+  margin-top: 20%;
+  grid-column: 2; }
+
+.fbox-3 {
+  margin-top: 0;
+  grid-column: 1; }
+
+.fbox-4 {
+  margin-top: 17%;
+  grid-column: 2; }
+
+.fbox-5 {
+  margin-top: 0;
+  grid-column: 1; }
+
+.fbox-6 {
+  margin-top: 16%;
+  grid-column: 2; }
 
 @media (max-width: 600px) {
   #mid-container {
