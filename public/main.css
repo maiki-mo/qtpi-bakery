@@ -15,8 +15,7 @@ footer {
   border-radius: 10px 10px 0 0; }
 
 #left-image {
-  position: relative;
-  bottom: 05%;
+  margin-top: 35%;
   right: 2vw;
   width: 130%; }
 
@@ -36,6 +35,14 @@ h2 {
   color: white;
   font-family: 'Gaegu', cursive; }
 
+h3 {
+  text-align: center;
+  margin: 2%;
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: white;
+  font-family: 'Gaegu', cursive; }
+
 #pi {
   font-size: 6vw; }
 
@@ -45,6 +52,9 @@ a {
   color: white;
   font-size: 1.7vw;
   font-family: 'Shadows Into Light', cursive; }
+
+span > p {
+  margin-right: 1vw; }
 
 p {
   display: inline-block; }
@@ -65,7 +75,7 @@ a:hover {
 
 .container {
   display: grid;
-  grid-template-columns: 25% 50% 25%; }
+  grid-template-columns: 20% 50% 30%; }
 
 #mid-container {
   display: grid;
@@ -121,10 +131,17 @@ hr {
 
 #mail-2 {
   grid-column: 2;
-  border-left: 1px white solid;
+  border-left: 2px white solid;
+  padding-left: 2vw;
   height: 3.7vw;
   font-family: 'Shadows Into Light', cursive;
-  font-size: 2vw; }
+  font-size: 1.5vw;
+  color: white; }
+
+#mail-2 > p {
+  position: relative;
+  left: 1vw;
+  bottom: 0.5vw; }
 
 label {
   color: white;
@@ -166,18 +183,30 @@ input {
 
 .cupcake-img {
   margin: 1vw auto;
-  width: 25%;
-  border: 2px white solid;
+  margin-top: 12%;
+  width: 35%;
+  border: 4px white solid;
   border-radius: 50%; }
 
+.cupcake-img-spin {
+  margin: 1vw auto;
+  width: 35%;
+  border: 2px white solid;
+  border-radius: 50%;
+  animation-name: wah;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
 .cake-info {
-  text-align: center;
+  text-align: justify;
   color: white;
-  font-size: 1.7vw;
+  font-size: 12px;
   font-family: 'Shadows Into Light', cursive;
   background-color: #FF6959;
   border-radius: 10px;
-  margin: 1vw; }
+  margin: 1vw;
+  padding: 1.5vw; }
 
 #first-cake {
   grid-column: 1;
@@ -209,6 +238,13 @@ input {
   background-color: #FFD4D0;
   border-radius: 10px; }
 
+.icon {
+  width: 2vw;
+  margin-left: 2vw; }
+
+#first-icon {
+  margin-left: 2vw; }
+
 @media (max-width: 600px) {
   #mid-container {
     display: block; }
@@ -218,5 +254,31 @@ input {
 
   input {
     width: 10vw; } }
+@keyframes wah {
+  0% {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: rotate(0deg); }
+  20% {
+    position: relative;
+    top: 10%;
+    right: 100%;
+    transform: rotate(590deg); }
+  45% {
+    position: relative;
+    top: 36%;
+    right: -20%;
+    transform: rotate(1120deg); }
+  70% {
+    position: relative;
+    top: -10%;
+    right: 80%;
+    transform: rotate(800deg); }
+  100% {
+    position: relative;
+    top: 0%;
+    right: 0;
+    transform: rotate(0deg); } }
 
 /*# sourceMappingURL=main.css.map */

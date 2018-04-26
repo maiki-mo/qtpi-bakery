@@ -1,7 +1,7 @@
 def email()
   @email = params[:email]
   from = Email.new(email: 'qtpies@gmail.com')
-  to = Email.new(email: @email)
+  to = Email.new(email: @email.to_s )
   subject = 'CUTE MUFFINS!! ;3 ;3 ;3'
   content = content = Content.new(
     type: 'text/plain', 

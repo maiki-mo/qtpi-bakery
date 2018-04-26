@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>qtPIs Bake & Cake</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css" integrity="sha384-KtmfosZaF4BaDBojD9RXBSrq5pNEO79xGiggBxf8tsX+w2dBRpVW5o0BPto2Rb2F" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css" integrity="sha384-8WwquHbb2jqa7gKWSoAwbJBV2Q+/rQRss9UXL5wlvXOZfSodONmVnifo/+5xJIWX" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Gaegu|Shadows+Into+Light" rel="stylesheet">
   <link rel="stylesheet" href="main.css"></link>
 </head>
@@ -38,8 +40,6 @@
   </header>
 
     <%= yield %>
-    
-    <style src="main.js"></style>
   
   <footer>
     <form class="low-container" id="form" method="post">
@@ -48,15 +48,20 @@
             <label for="email">join our e-mail list <3:</label>
         </span>
         <span>
-            <input id="mail" type="email" id="mail" value"E-Mail" name="email">
+            <input id="mail" type="text" id="mail" value"E-Mail" name="email">
         </span>
         <span>
           <button type="submit" value="Submit">submit onii-chan!</button>
         </span>
       </div>
       <section id="mail-2">
+        <p>follow us!</p>
+        <img id="first-icon" class="icon" src="images/facebook.png">
+        <img class="icon" src="images/instagram.png">
+        <img class="icon" src="images/twitter.png">
       </section>
     </form>
   </footer>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

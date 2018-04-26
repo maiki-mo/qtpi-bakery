@@ -3,6 +3,7 @@ require 'sinatra/reloader'
 require 'pry'
 require 'sendgrid-ruby'
 require './func.rb'
+require './classes.rb'
 
 include SendGrid
 
@@ -11,7 +12,7 @@ get '/' do
 end
 
 post '/' do
-  email()
+  email
   redirect '/'
 end
 
@@ -20,7 +21,7 @@ get '/cookies' do
 end
 
 post '/cookies' do
-  email()
+  email
   redirect '/cookies'
 end
 
@@ -29,7 +30,7 @@ get '/muffins' do
 end
 
 post '/muffins' do
-  email()
+  email
   redirect '/muffins'
 end
 
@@ -38,6 +39,6 @@ get '/cakes' do
 end
 
 post '/cakes' do
-  email()
+  email
   redirect '/cakes'
 end
