@@ -8,7 +8,7 @@ include SendGrid
 
 def email()
   @email = params[:email]
-  from = Email.new(email: 'mike.p.monahan@gmail.com')
+  from = Email.new(email: 'yourewaifu@3dpd.com')
   to = Email.new(email: @email)
   subject = 'Treats Catalog :3 !!'
   content = Content.new(
@@ -22,9 +22,34 @@ def email()
       <link href="https://fonts.googleapis.com/css?family=Gaegu|Shadows+Into+Light" rel="stylesheet">
     </head>
       <body>
-        <img style="border-radius: 15px; margin: 2% 34%;" src="https://i.gifer.com/Jx9.gif">
-        <br />
+        <img style="border-radius: 15px; margin: 2% 30%;" src="https://i.gifer.com/Jx9.gif">
         <p style="text-align: center">we are busy working for you! $_$!!</p>
+            <br />  
+          <h1 style="font-size: 6vw; text-align: center;">qtPIs bake & cake</h1>
+            <br />
+        <div style="text-align: center;">
+        <p style="text-align: center;">our treaties!</p>
+                <ul>
+                <h5>Cookies:</h5>
+                    <li style="list-style-type: none">Magica Madoka Cookies --- $15 ... Will you make a pact with these tasty cookies? ;) xD</li>
+                    <li style="list-style-type: none">Sailor Moon Cookies --- $20 ... Fight evil by moonlight with these scouts!</li>
+                    <li style="list-style-type: none">Totoro Cookies --- $15 ... Share these qt Totoro cookies with your neighbor!</li>
+                </ul>
+            <br>
+                <ul>
+                <h5>Cakes:</h5>
+                    <li style="list-style-type: none">Cat Cakes --- $25 ... KAWAII!! A delicious cake in the shape of a qt kitten!</li>
+                    <li style="list-style-type: none">Bear Cakes --- $20 ... Bear-sama will never eat you!</li>
+                    <li style="list-style-type: none">Fox Cakes --- $8 Per Slice $40 ... What does the fox say? I don not know onii-chan!?</li>
+                </ul>
+            <br>
+                <ul>
+                <h5>Cupcakes:</h5>
+                    <li style="list-style-type: none">Pokemon Cookies --- $5 ... Pika Pika! Gotta catch all of these Cookies!</li>
+                    <li style="list-style-type: none">Hello Kitty Cupcakes --- $5 ... Say hello to a few of these treats! :3</li>
+                    <li style="list-style-type: none">Pupper Cupcakes --- $5 ... Be a good boy and get in my belly!</li>
+                </ul>
+                </div>
       </body>
     </html>'
   )
