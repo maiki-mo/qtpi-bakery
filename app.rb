@@ -13,9 +13,20 @@ def email()
   subject = 'Treats Catalog :3 !!'
   content = Content.new(
     type: 'text/html', 
-    value: "<html>
-
-            </html>"
+    value: '<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Gaegu|Shadows+Into+Light" rel="stylesheet">
+    </head>
+      <body>
+        <img style="border-radius: 15px; margin: 2% 34%;" src="https://i.gifer.com/Jx9.gif">
+        <br />
+        <p style="text-align: center">we are busy working for you! $_$!!</p>
+      </body>
+    </html>'
   )
 
   mail = Mail.new(from, subject, to, content)
