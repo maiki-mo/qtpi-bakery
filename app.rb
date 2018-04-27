@@ -2,10 +2,29 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'pry'
 require 'sendgrid-ruby'
-require './func.rb'
 require './classes.rb'
 
 include SendGrid
+
+def email()
+  @email = params[:email]
+  from = Email.new(email: 'mike.p.monahan@gmail.com')
+  to = Email.new(email: @email)
+  subject = 'Treats Catalog :3 !!'
+  content = Content.new(
+    type: 'text/html', 
+    value: "<html>
+
+            </html>"
+  )
+
+  mail = Mail.new(from, subject, to, content)
+  sg = SendGrid::API.new(
+    api_key: ENV['SENDGRID_API_KEY']
+  )
+
+  response = sg.client.mail._('send').post(request_body: mail.to_json)
+end
 
 catcake = Confection.new("Cat Cake", "Cake", "$25.00", "KAWAII!! A delicious cake in the shape of a qt kitten!")
 bearcake = Confection.new("Bear Cake", "Cake", "$20.00", "Bear-sama will never eat you!")
@@ -22,7 +41,7 @@ get '/' do
 end
 
 post '/' do
-  email
+  email()
   redirect '/'
 end
 
@@ -34,7 +53,7 @@ get '/cookies' do
 end
 
 post '/cookies' do
-  email
+  email()
   redirect '/cookies'
 end
 
@@ -46,7 +65,7 @@ get '/cupcakes' do
 end
 
 post '/cupcakes' do
-  email
+  email()
   redirect '/cupcakes'
 end
 
@@ -58,6 +77,6 @@ get '/cakes' do
 end
 
 post '/cakes' do
-  email
+  email()
   redirect '/cakes'
 end
